@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" width="720" height="720">
+  <defs>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff2af"/>
+      <stop offset="50%" stop-color="#ffd865"/>
+      <stop offset="100%" stop-color="#ffbf49"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="720" height="720" fill="#0c0b0d"/>
+  <g filter="url(#glow)">
+    <path d="M360 140 C280 140 220 180 220 300 C220 420 285 500 360 500 C435 500 500 420 500 300 C500 180 440 140 360 140 Z" fill="none" stroke="url(#gold-grad)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+    <path d="M360 108 L360 240" fill="none" stroke="url(#gold-grad)" stroke-width="28" stroke-linecap="round"/>
+    <path d="M220 300 L500 300" fill="none" stroke="url(#gold-grad)" stroke-width="20" stroke-linecap="round"/>
+    <path d="M360 500 L360 620" fill="none" stroke="url(#gold-grad)" stroke-width="24" stroke-linecap="round"/>
+    <path d="M190 520 C240 460 320 460 360 540 C400 460 480 460 530 520" fill="none" stroke="url(#gold-grad)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M150 110 C220 90 300 100 360 80 C420 100 500 90 570 110" fill="none" stroke="url(#gold-grad)" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="360" cy="300" r="12" fill="#fff6c9" opacity="0.9"/>
+  </g>
+</svg>
